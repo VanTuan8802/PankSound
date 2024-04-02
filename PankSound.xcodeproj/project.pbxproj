@@ -9,25 +9,31 @@
 /* Begin PBXBuildFile section */
 		0EFFA2FA2BBBF90900AEF44A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFFA2F92BBBF90900AEF44A /* AppDelegate.swift */; };
 		0EFFA2FC2BBBF90900AEF44A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFFA2FB2BBBF90900AEF44A /* SceneDelegate.swift */; };
-		0EFFA2FE2BBBF90900AEF44A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFFA2FD2BBBF90900AEF44A /* ViewController.swift */; };
+		0EFFA2FE2BBBF90900AEF44A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFFA2FD2BBBF90900AEF44A /* HomeViewController.swift */; };
 		0EFFA3012BBBF90900AEF44A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EFFA2FF2BBBF90900AEF44A /* Main.storyboard */; };
 		0EFFA3032BBBF90A00AEF44A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EFFA3022BBBF90A00AEF44A /* Assets.xcassets */; };
 		0EFFA3062BBBF90A00AEF44A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EFFA3042BBBF90A00AEF44A /* LaunchScreen.storyboard */; };
 		0EFFA3102BBC024900AEF44A /* PankSoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFFA30E2BBC024900AEF44A /* PankSoundViewController.swift */; };
 		0EFFA3112BBC024900AEF44A /* PankSoundViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EFFA30F2BBC024900AEF44A /* PankSoundViewController.xib */; };
+		0EFFA3132BBC0F1000AEF44A /* effects.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EFFA3122BBC0F1000AEF44A /* effects.json */; };
+		0EFFA31A2BBC1DBA00AEF44A /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFFA3192BBC1DBA00AEF44A /* Audio.swift */; };
+		0EFFA31C2BBC1EB200AEF44A /* EffectSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFFA31B2BBC1EB200AEF44A /* EffectSound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0EFFA2F62BBBF90900AEF44A /* PankSound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PankSound.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EFFA2F92BBBF90900AEF44A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EFFA2FB2BBBF90900AEF44A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0EFFA2FD2BBBF90900AEF44A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0EFFA2FD2BBBF90900AEF44A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0EFFA3002BBBF90900AEF44A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0EFFA3022BBBF90A00AEF44A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EFFA3052BBBF90A00AEF44A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0EFFA3072BBBF90A00AEF44A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EFFA30E2BBC024900AEF44A /* PankSoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PankSoundViewController.swift; sourceTree = "<group>"; };
 		0EFFA30F2BBC024900AEF44A /* PankSoundViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PankSoundViewController.xib; sourceTree = "<group>"; };
+		0EFFA3122BBC0F1000AEF44A /* effects.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = effects.json; sourceTree = "<group>"; };
+		0EFFA3192BBC1DBA00AEF44A /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
+		0EFFA31B2BBC1EB200AEF44A /* EffectSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectSound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +69,13 @@
 				0EFFA30D2BBC023100AEF44A /* PankSound */,
 				0EFFA2F92BBBF90900AEF44A /* AppDelegate.swift */,
 				0EFFA2FB2BBBF90900AEF44A /* SceneDelegate.swift */,
-				0EFFA2FD2BBBF90900AEF44A /* ViewController.swift */,
+				0EFFA2FD2BBBF90900AEF44A /* HomeViewController.swift */,
 				0EFFA2FF2BBBF90900AEF44A /* Main.storyboard */,
+				0EFFA3122BBC0F1000AEF44A /* effects.json */,
 				0EFFA3022BBBF90A00AEF44A /* Assets.xcassets */,
 				0EFFA3042BBBF90A00AEF44A /* LaunchScreen.storyboard */,
 				0EFFA3072BBBF90A00AEF44A /* Info.plist */,
+				0EFFA3192BBC1DBA00AEF44A /* Audio.swift */,
 			);
 			path = PankSound;
 			sourceTree = "<group>";
@@ -77,6 +85,7 @@
 			children = (
 				0EFFA30E2BBC024900AEF44A /* PankSoundViewController.swift */,
 				0EFFA30F2BBC024900AEF44A /* PankSoundViewController.xib */,
+				0EFFA31B2BBC1EB200AEF44A /* EffectSound.swift */,
 			);
 			path = PankSound;
 			sourceTree = "<group>";
@@ -143,6 +152,7 @@
 				0EFFA3032BBBF90A00AEF44A /* Assets.xcassets in Resources */,
 				0EFFA3112BBC024900AEF44A /* PankSoundViewController.xib in Resources */,
 				0EFFA3012BBBF90900AEF44A /* Main.storyboard in Resources */,
+				0EFFA3132BBC0F1000AEF44A /* effects.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,10 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EFFA2FE2BBBF90900AEF44A /* ViewController.swift in Sources */,
+				0EFFA2FE2BBBF90900AEF44A /* HomeViewController.swift in Sources */,
 				0EFFA2FA2BBBF90900AEF44A /* AppDelegate.swift in Sources */,
+				0EFFA31C2BBC1EB200AEF44A /* EffectSound.swift in Sources */,
 				0EFFA3102BBC024900AEF44A /* PankSoundViewController.swift in Sources */,
 				0EFFA2FC2BBBF90900AEF44A /* SceneDelegate.swift in Sources */,
+				0EFFA31A2BBC1DBA00AEF44A /* Audio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

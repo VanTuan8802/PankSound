@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController, AVAudioRecorderDelegate {
+class HomeViewController: UIViewController, AVAudioRecorderDelegate {
 
     @IBOutlet weak var recordBtn: UIButton!
     @IBOutlet weak var recordLb: UILabel!
@@ -24,6 +24,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate {
     
     private func setUI() {
         stopBtn.isEnabled = false
+        recordLb.text = "Tap to record"
     }
 
     @IBAction func recordAction(_ sender: Any) {
@@ -52,6 +53,15 @@ class ViewController: UIViewController, AVAudioRecorderDelegate {
         recordBtn.isEnabled = true
         stopBtn.isEnabled = false
         recordLb.text = "Tap to Record"
+        
+        //       let audioSession = AVAudioSession.sharedInstance()
+        //        try! audioSession.setActive(false)
+        
+        let pankSoundVc = PankSoundViewController(nibName: "PankSoundViewController", bundle: nil)
+        let nav = UINavigationController(rootViewController: pankSoundVc)
+        nav.setNavigationBarHidden(true, animated: false)
+        nav.modalPresentationStyle = .fullScreen
+        self.present(nav, animated: true)
     }
 }
 
